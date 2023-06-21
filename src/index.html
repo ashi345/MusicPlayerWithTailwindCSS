@@ -11,13 +11,14 @@
         <title>Manage Landing Page</title>
     </head>
 
-    <body class="bg-brightRedLight">
-        <nav class="relative container mx-auto p-6">
+    <body class="bg-violet-700 text-white">
+        <nav class="relative container p-6">
+
             <!-- Inital left part which includes img,logo, link -->
             <div class="flex items-center justify-between mx-auto">
                 <div class="flex justify-start">
                     <div class= "logo-image">
-                        <img class="h-20 w-20 rounded-full" src="../Img/plant-949111_640.jpg" alt="">
+                        <img class="h-20 w-20 rounded-full" src="../Img/plant-949111_640.jpg" alt="logo-image">
                     </div>
                         
                     <div class = "flex-col ml-0 ">
@@ -28,26 +29,35 @@
                     <div class = "ml-10"><a href="#">Favourites</a></div> 
                 </div>
 
-                <div class="flex justify-start">
+                <div class="flex justify-around">
                     <div>
-                        <form>
-                            <input type="text" placeholder="Search">
-                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <form class="bg-slate-500  flex flex-row-reverse rounded-full">
+                            <button type="submit" class="mr-2"><i class="fa-solid fa-microphone"></i></button>
+                            <input type="text" placeholder="Search" class="bg-slate-500 ml-3">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass text-white ml-3 mt-1"></i></button>
+                            
                         </form>
                     </div>
                     <div><i class="fa-solid fa-bell mx-auto ml-6 mr-6 mt-1 "></i></div>
                     <div><img src="../Img/download.jpeg" alt="avatar" class=" h-5 w-5 rounded-full"></div>
                 </div>
-            </div>  
+            </div> 
+            
+
         </nav>
 
-        <!-- next section -->
-        <section class="flex">
-            <img src="../Img/piano-spielerin-3847833_640.jpg" alt="image" class="mx-auto p-6">
-        </section>
+        <div class="flex">
 
-        <section class="latest-release flex-col justify-between">
-            <h2 class="font-bold p-6"> Latest Release</h2>
+        <section class="w-4/6 mx-auto">
+
+        <!-- next section -->
+        <div class="flex justify-around">
+            <img src="../Img/piano-spielerin-3847833_640.jpg" alt="image" class="mx-auto p-6">
+        </div>
+
+
+        <div class="latest-release flex-col justify-between">
+            <h2 class="font-bold p-6 ml-10"> Latest Release</h2>
             <!-- first Horizontal Div -->
             <div class="flex mx-auto p-3">
                 <!-- first div -->
@@ -114,15 +124,15 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
 
         <!-- Section for Popular Artists -->
 
-        <section class="flex-col justify-between mx-auto p-6">
+        <div class="flex-col justify-between mx-auto p-3">
 
-            <h1 class="font-bold">Popular Artists</h1>
-            <div class="flex justify-start mx-auto p-6">
+            <h1 class="font-bold ml-10">Popular Artists</h1>
+            <div class="flex justify-around mx-auto p-6">
 
                 <!-- first Artist -->
                 <div class="div flex-col justify-between p-6">
@@ -157,13 +167,201 @@
                 <!-- Sixth Artist -->
                 <div class="div flex-col justify-between p-6">
                     <img src="../Img/photo-1598387993441-a364f854c3e1.avif" alt="atrist-6" class="rounded-full h-20 w-20">
-                    <h3 class="font-bold p-0">Imagine Dragon</h3>
+                    <h3 class="font-bold p-0">Bruno Mars</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Multiple Genre Section -->
+        <div class="flex-col justify-between p-0 mx-auto">
+
+            <div class="flex justify-evenly space-x-1 space-y-0 ml-10 bg-violet-400 p-3 ">
+                <!-- fisrt image -->
+                <div>
+                    <img src="../Img/Genre/Stations.png" alt="stations-image" class = "rounded-full h-20 w-20">
                 </div>
 
+                <!-- Second image -->
+                <div>
+                    <img src="../Img/Genre/Love.png" alt="stations-image" class = "rounded-full h-20 w-20">
+                </div>
+                
 
+                <!-- Third image -->
+                <div>
+                    <img src="../Img/Genre/radio.png" alt="stations-image" class = "rounded-full h-20 w-20">
+
+                </div>
+                
+                <!-- Fourth image -->
+                <div>
+                    <img src="../Img/Genre/chill.png" alt="stations-image" class = "rounded-full h-20 w-20">
+                </div>
+                
+
+                <!-- Fifth image -->
+                <div> 
+                    <img src="../Img/Genre/workout.png" alt="stations-image" class = "rounded-full h-20 w-20">
+                </div>
+                
+
+                <!-- Sixth image -->
+
+                <div>
+                    <img src="../Img/Genre/rock.png" alt="stations-image" class = "rounded-full h-20 w-20">
+                </div>
+                
+
+                <!-- Seventh image -->
+                <div>
+                    <img src="../Img/Genre/pop.png" alt="stations-image" class = "rounded-full h-20 w-20">
+                </div>
+                
             </div>
-        </section>
 
+
+            <div class="flex justify-evenly space-x-3 space-y-0 ml-10 mt-3 ">
+                <div>
+                    <img src="../Img/Genre/party.jpeg" alt="party image" class="w-21 h-21">
+                </div>
+                <div>
+                    <img src="../Img/Genre/electronic_music.jpeg" alt="electronic music image">
+                </div>
+                <div>
+                    <img src="../Img/Genre/road_trip.jpeg" alt="road trip image">
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Latest English Section -->
+        <div class="flex-col justify-start p-3  mx-auto">
+                
+            <h1 class="font-bold ml-6">Latest English</h1>
+            
+            <div class="flex justify-start mx-auto p-3 ">
+                <div class="flex-col justify-start p-3 mx-auto">
+                    <img src="../Img/guitar-67420_640.webp" alt="" class = "h-20 w-20">
+                    <h3 class = "font-bold">Onism</h3>
+                    <p>AUG 11, 2017</p>
+                </div>
+    
+                <div class="flex-col justify-start p-3 mx-auto">
+                    <img src="../Img/live-music-2219036_640.jpg" alt="" class = "h-20 w-20">
+                    <h3 class = "font-bold">Onism</h3>
+                    <p>AUG 11, 2017</p>
+                </div>
+    
+                <div class="flex-col justify-start p-3 mx-auto">
+                    <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "h-20 w-20">
+                    <h3 class = "font-bold">Onism</h3>
+                    <p>AUG 11, 2017</p>
+                </div>
+    
+                <div class="flex-col justify-start p-3 mx-auto">
+                    <img src="../Img/plant-949111_640.jpg" alt="" class = "h-20 w-20">
+                    <h3 class = "font-bold">Onism</h3>
+                    <p>AUG 11, 2017</p>
+                </div>
+    
+                <div class="flex-col justify-start p-3 mx-auto">
+                    <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "h-20 w-20">
+                    <h3 class = "font-bold">Onism</h3>
+                    <p>AUG 11, 2017</p>
+                </div>
+    
+                <div class="flex-col justify-start p-3 mx-auto">
+                    <img src="../Img/guitar-67420_640.webp" alt="" class = "h-20 w-20">
+                    <h3 class = "font-bold">Onism</h3>
+                    <p>AUG 11, 2017</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Aside section for Queue -->
+    <aside class = "flex-col justify-between w-2/6 text-white mx-auto">
+
+        <div class="flex justify-between p-6 mx-auto">
+            <div>
+                <h1 class="font-bold ">Queue</h1>
+            </div>
+            <div>
+                <a href="#" class="text-green-600 hover:text-white">Queue <i class="fa-sharp fa-light fa-greater-than origin-center rotate-90"></i> </a>
+            </div>
+            
+            
+        </div>
+
+        <div class="flex justify-around p-2 mx-auto">
+            <div class="flex justify-start p-1">
+                <h1 class="font-bold text-center">01</h1>
+                <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-12 w-12 p-0 ml-1">
+                <div class = "flex-col ml-2 ">
+                    <h3 class="font-bold">Mirage</h3>
+                    <p>Echo</p>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+            </div>
+            
+        </div>
+
+        <!-- Queue-2 -->
+        <div class="flex justify-around p-2 mx-auto">
+            <div class="flex justify-start p-1">
+                <h1 class="font-bold text-center">02</h1>
+                <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-12 w-12 p-0 ml-1">
+                <div class = "flex-col ml-2 ">
+                    <h3 class="font-bold">Mirage</h3>
+                    <p>Echo</p>
+                </div>
+            </div>
+
+            <div>
+                <a href="#" class=" text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+            </div>
+        </div>
+
+        <!-- Queue-3 -->
+        <div class="flex justify-around p-2 mx-auto">
+            <div class="flex justify-start p-1">
+                <h1 class="font-bold text-center">03</h1>
+                <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-12 w-12 p-0 ml-1">
+                <div class = "flex-col ml-2 ">
+                    <h3 class="font-bold">Mirage</h3>
+                    <p>Echo</p>
+                </div>
+            </div>
+
+            <div>
+                <a href="#" class=" text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+            </div>
+        </div>
+
+        <!-- Queue-4 -->
+        <div class="flex justify-around p-2 mx-auto">
+            <div class="flex justify-start p-1">
+                <h1 class="font-bold text-center">04</h1>
+                <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-12 w-12 p-0 ml-1">
+                <div class = "flex-col ml-2 ">
+                    <h3 class="font-bold">Mirage</h3>
+                    <p>Echo</p>
+                </div>
+            </div>
+
+            <div>
+                <a href="#" class=" text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+            </div>
+        </div>
+
+
+    </aside>
+
+</div>
 
     </body>
 </html>
