@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta  http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="../css/main.css">
         <script  src="https://kit.fontawesome.com/b3348ae33f.js"
       crossorigin="anonymous"
   ></script>
@@ -12,13 +12,14 @@
     </head>
 
     <body class="bg-violet-700 text-white">
-        <nav class="relative container p-6">
+
+        <nav class="relative container p-6 ">
 
             <!-- Inital left part which includes img,logo, link -->
-            <div class="flex items-center justify-between mx-auto sm:flex-row-reverse sm:text-left">
-                <div class="flex justify-start sm:flex-col-reverse">
+            <div class="flex items-center justify-between mx-auto">
+                <div class="flex justify-start">
                     <div class= "logo-image">
-                        <img class="h-20 w-20 rounded-full" src="../Img/plant-949111_640.jpg" alt="logo-image" class="sm:w-1/2 sm:h-1/2">
+                        <img class="h-12 w-12 rounded-full" src="../Img/plant-949111_640.jpg" alt="logo-image" class="sm:w-1/2 sm:h-1/2">
                     </div>
                         
                     <div class = "flex-col ml-0 ">
@@ -29,7 +30,7 @@
                     <div class = "ml-10"><a href="#">Favourites</a></div> 
                 </div>
 
-                <div class="flex justify-around">
+                <div class="flex justify-around items-center">
                     <div>
                         <form class="bg-slate-500  flex flex-row-reverse rounded-full">
                             <button type="submit" class="mr-2"><i class="fa-solid fa-microphone"></i></button>
@@ -63,7 +64,7 @@
                 <!-- first div -->
                 <div class="flex justify-around ml-10 p-6">
                     <div class="p-3">
-                        <img src="../Img/plant-949111_640.jpg" alt="latest-release-image" class = "h-20 w-20 sm:w-5 sm:h-5">
+                        <img src="../Img/plant-949111_640.jpg" alt="latest-release-image" class = "h-20 w-20 sm:h-12 sm:w-12 md:h-20 md:w-20">
                     </div>
                     <div class="p-3">
                         <h2 class="font-bold">Onism</h2>
@@ -284,7 +285,7 @@
     <!-- Aside section for Queue -->
     <aside class = "flex-col justify-between w-2/6 text-white mx-auto">
 
-        <div class="flex justify-between p-6 mx-auto">
+        <div class="flex justify-around p-6 mx-auto">
             <div>
                 <h1 class="font-bold ">Queue</h1>
             </div>
@@ -296,7 +297,7 @@
         </div>
 
         <div class="flex justify-around p-2 mx-auto">
-            <div class="flex justify-start p-1">
+            <div class="flex justify-around p-1">
                 <h1 class="font-bold text-center">01</h1>
                 <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-12 w-12 p-0 ml-1">
                 <div class = "flex-col ml-2 ">
@@ -304,7 +305,7 @@
                     <p>Echo</p>
                 </div>
             </div>
-            <div>
+            <div class="items-center pr-12">
                 <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
             </div>
             
@@ -321,14 +322,14 @@
                 </div>
             </div>
 
-            <div>
+            <div class="items-center pr-12">
                 <a href="#" class=" text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
             </div>
         </div>
 
         <!-- Queue-3 -->
         <div class="flex justify-around p-2 mx-auto">
-            <div class="flex justify-start p-1">
+            <div class="flex justify-around p-1">
                 <h1 class="font-bold text-center">03</h1>
                 <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-12 w-12 p-0 ml-1">
                 <div class = "flex-col ml-2 ">
@@ -337,14 +338,14 @@
                 </div>
             </div>
 
-            <div>
+            <div class="items-center pr-12">
                 <a href="#" class=" text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
             </div>
         </div>
 
         <!-- Queue-4 -->
         <div class="flex justify-around p-2 mx-auto">
-            <div class="flex justify-start p-1">
+            <div class="flex justify-around p-1">
                 <h1 class="font-bold text-center">04</h1>
                 <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-12 w-12 p-0 ml-1">
                 <div class = "flex-col ml-2 ">
@@ -353,7 +354,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="items-center pr-12">
                 <a href="#" class=" text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
             </div>
         </div>
@@ -362,6 +363,7 @@
     </aside>
 
 </div>
+
 
     </body>
 </html>
