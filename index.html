@@ -1,369 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta  http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/main.css">
-        <script  src="https://kit.fontawesome.com/b3348ae33f.js"
-      crossorigin="anonymous"
-  ></script>
-        <title>Ninja Studio</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta  http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script  src="https://kit.fontawesome.com/b3348ae33f.js"
+    crossorigin="anonymous"
+></script>
+    <title>Ninja Studio</title>
+</head>
 
-    <body class="bg-violet-700 text-white">
+<body class="bg-violet-700 text-white flex-col">
 
-        <nav class="relative container p-6 ">
 
-            <!-- Inital left part which includes img,logo, link -->
-            <div class="flex items-center justify-between mx-auto">
-                <div class="flex justify-start">
-                    <div class= "logo-image">
-                        <img class="h-12 w-12 rounded-full" src="../Img/plant-949111_640.jpg" alt="logo-image" class="sm:w-1/2 sm:h-1/2">
-                    </div>
-                        
-                    <div class = "flex-col ml-0 ">
+<!-- Responsive Code for mobile design and above (Whole code again) -->
+    <header>
+        <nav class="relative container  p-6 mx-auto flex-col max-w-xl md:flex md:flex-row md:justify-between md:mx-auto md:max-w-full">
+            <!-- Div has Logo and Favourites heading -->
+            <div class="flex justify-between space-y-6 md:space-y-4 md:space-x-8 md:shrink-0">
+
+                <!-- div has logo-img and title -->
+                <div class="flex ">
+                    <span >
+                        <img src="./Img/plant-949111_640.jpg" alt="logo-image" class=" mx-auto rounded-full h-20 w-20 md:h-30 md:w-30">
+                    </span>
+                    <span class="flex-col ml-2 items-center mt-3">
                         <h1>Ninja</h1>
-                        <h2 class="font-bold text-md">Studio</h2> 
-                        
-                    </div>
-                    <div class = "ml-10"><a href="#">Favourites</a></div> 
+                        <h1 class="font-serif font-bold">Studio</h1>
+                    </span>
                 </div>
 
-                <div class="flex justify-around items-center">
-                    <div>
-                        <form class="bg-slate-500  flex flex-row-reverse rounded-full">
-                            <button type="submit" class="mr-2"><i class="fa-solid fa-microphone"></i></button>
-                            <input type="text" placeholder="Search" class="bg-slate-500 ml-3">
-                            <button type="submit"><i class="fa-solid fa-magnifying-glass text-white ml-3 mt-1"></i></button>
-                            
-                        </form>
-                    </div>
-                    <div><i class="fa-solid fa-bell mx-auto ml-6 mr-6 mt-1 "></i></div>
-                    <div><img src="../Img/download.jpeg" alt="avatar" class=" h-5 w-5 rounded-full"></div>
+                <!-- Div has Favourites link-->
+                <div>
+                    <a href="#"  class="font-2xl">
+                        Favourites
+                    </a>
                 </div>
-            </div> 
-            
 
+            </div>
+
+            <!-- Div has search bar , notification bell, avatar -->
+            <div class="flex justify-around mt-6 md:space-x-8">
+                <div>
+                    <form class="flex flex-row-reverse rounded-full bg-slate-500 md:rounded-l-full">
+                        <button type="submit"><i class="fa-solid fa-microphone mr-3"></i></button>
+                        <input type="text" placeholder="Search" class="bg-slate-500 rounded-full p-2">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass ml-3 text-white"></i></button>
+                    </form>
+                </div>
+                <div><i class="fa-solid fa-bell mt-3"></i></div>
+                <div><img src="../Img/download.jpeg" alt="avatar" class=" h-10 w-10 rounded-full"></div>
+            </div>
         </nav>
+    </header>
 
-        <div class="flex">
+    <main class="max-w-full flex-col mx-auto space-x-10 md:flex  md:flex-row md:space-x-8">
 
-        <section class="w-4/6 mx-auto">
-
-        <!-- next section -->
-        <div class="flex justify-around">
-            <img src="../Img/piano-spielerin-3847833_640.jpg" alt="image" class="mx-auto p-6">
-        </div>
-
-
-        <div class="latest-release flex-col justify-between">
-            <h2 class="font-bold p-6 ml-10"> Latest Release</h2>
-            <!-- first Horizontal Div -->
-            <div class="flex mx-auto p-3">
-                <!-- first div -->
-                <div class="flex justify-around ml-10 p-6">
-                    <div class="p-3">
-                        <img src="../Img/plant-949111_640.jpg" alt="latest-release-image" class = "h-20 w-20 sm:h-12 sm:w-12 md:h-20 md:w-20">
-                    </div>
-                    <div class="p-3">
-                        <h2 class="font-bold">Onism</h2>
-                        <p>AUG 11, 2017</p>
-                    </div>
-                    <div class="p-3">
-                        <i class="fa-solid fa-ellipsis"></i>
-                        <p>4:44</p>
-                    </div>
-
-                </div>
-                <!-- Second Div -->
-                <div class="flex justify-around ml-10 p-6">
-                    <div class="p-3">
-                        <img src="../Img/plant-949111_640.jpg" alt="latest-release-image" class = "h-20 w-20">
-                    </div>
-                    <div class="p-3">
-                        <h2 class="font-bold">Onism</h2>
-                        <p>AUG 11, 2017</p>
-                    </div>
-                    <div class="p-3">
-                        <i class="fa-solid fa-ellipsis"></i>
-                        <p>4:44</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Second horizontal div -->
-
-            <div class="flex mx-auto p-3">
-                <!-- first div -->
-                <div class="flex justify-around ml-10 p-6">
-                    <div class="p-3">
-                        <img src="../Img/plant-949111_640.jpg" alt="latest-release-image" class = "h-20 w-20">
-                    </div>
-                    <div class="p-3">
-                        <h2 class="font-bold">Onism</h2>
-                        <p>AUG 11, 2017</p>
-                    </div>
-                    <div class="p-3">
-                        <i class="fa-solid fa-ellipsis"></i>
-                        <p>4:44</p>
-                    </div>
-
-                </div>
-                <!-- Second Div -->
-                <div class="flex justify-around ml-10 p-6">
-                    <div class="p-3">
-                        <img src="../Img/plant-949111_640.jpg" alt="latest-release-image" class = "h-20 w-20">
-                    </div>
-                    <div class="p-3">
-                        <h2 class="font-bold">Onism</h2>
-                        <p>AUG 11, 2017</p>
-                    </div>
-                    <div class="p-3">
-                        <i class="fa-solid fa-ellipsis"></i>
-                        <p>4:44</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Section for Popular Artists -->
-
-        <div class="flex-col justify-between mx-auto p-3">
-
-            <h1 class="font-bold ml-10">Popular Artists</h1>
-            <div class="flex justify-around mx-auto p-6">
-
-                <!-- first Artist -->
-                <div class="div flex-col justify-between p-6">
-                    <img src="../Img/photo-1573120525707-4549889744f2.avif" alt="atrist-1" class="rounded-full h-20 w-20">
-                    <h3 class="font-bold p-0">Ed Sheeran</h3>
-                </div>
-
-                <!-- second Artist -->
-                <div class="div flex-col justify-between p-6">
-                    <img src="../Img/photo-1447789624106-34acdd381c18.avif" alt="atrist-2" class="rounded-full h-20 w-20">
-                    <h3 class="font-bold p-0">ColdPlay</h3>
-                </div>
-
-                <!-- third Artist -->
-                <div class="div flex-col justify-between p-6">
-                    <img src="../Img/photo-1521417531039-75e91486cc40.avif" alt="atrist-3" class="rounded-full h-20 w-20">
-                    <h3 class="font-bold p-0">Zayn</h3>
-                </div>
-
-                <!-- fourth Artist -->
-                <div class="div flex-col justify-between p-6">
-                    <img src="../Img/photo-1543510616-a4025b9c1434.avif" alt="atrist-4" class="rounded-full h-20 w-20">
-                    <h3 class="font-bold p-0">Chalie Puth</h3>
-                </div>
-
-                <!-- fifth Artist -->
-                <div class="div flex-col justify-between p-6">
-                    <img src="../Img/photo-1575285113814-f770cb8c796e.avif" alt="atrist-5" class="rounded-full h-20 w-20">
-                    <h3 class="font-bold p-0">Imagine Dragon</h3>
-                </div>
-
-                <!-- Sixth Artist -->
-                <div class="div flex-col justify-between p-6">
-                    <img src="../Img/photo-1598387993441-a364f854c3e1.avif" alt="atrist-6" class="rounded-full h-20 w-20">
-                    <h3 class="font-bold p-0">Bruno Mars</h3>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Multiple Genre Section -->
-        <div class="flex-col justify-between p-0 mx-auto">
-
-            <div class="flex justify-evenly space-x-1 space-y-0 ml-10 bg-violet-400 p-3 ">
-                <!-- fisrt image -->
-                <div>
-                    <img src="../Img/Genre/Stations.png" alt="stations-image" class = "rounded-full h-20 w-20">
-                </div>
-
-                <!-- Second image -->
-                <div>
-                    <img src="../Img/Genre/Love.png" alt="stations-image" class = "rounded-full h-20 w-20">
-                </div>
-                
-
-                <!-- Third image -->
-                <div>
-                    <img src="../Img/Genre/radio.png" alt="stations-image" class = "rounded-full h-20 w-20">
-
-                </div>
-                
-                <!-- Fourth image -->
-                <div>
-                    <img src="../Img/Genre/chill.png" alt="stations-image" class = "rounded-full h-20 w-20">
-                </div>
-                
-
-                <!-- Fifth image -->
-                <div> 
-                    <img src="../Img/Genre/workout.png" alt="stations-image" class = "rounded-full h-20 w-20">
-                </div>
-                
-
-                <!-- Sixth image -->
-
-                <div>
-                    <img src="../Img/Genre/rock.png" alt="stations-image" class = "rounded-full h-20 w-20">
-                </div>
-                
-
-                <!-- Seventh image -->
-                <div>
-                    <img src="../Img/Genre/pop.png" alt="stations-image" class = "rounded-full h-20 w-20">
-                </div>
-                
-            </div>
-
-
-            <div class="flex justify-evenly space-x-3 space-y-0 ml-10 mt-3 ">
-                <div>
-                    <img src="../Img/Genre/party.jpeg" alt="party image" class="w-21 h-21">
-                </div>
-                <div>
-                    <img src="../Img/Genre/electronic_music.jpeg" alt="electronic music image">
-                </div>
-                <div>
-                    <img src="../Img/Genre/road_trip.jpeg" alt="road trip image">
-                </div>
-                
-            </div>
-        </div>
-
-        <!-- Latest English Section -->
-        <div class="flex-col justify-start p-3  mx-auto">
-                
-            <h1 class="font-bold ml-6">Latest English</h1>
-            
-            <div class="flex justify-start mx-auto p-3 ">
-                <div class="flex-col justify-start p-3 mx-auto">
-                    <img src="../Img/guitar-67420_640.webp" alt="" class = "h-20 w-20">
-                    <h3 class = "font-bold">Onism</h3>
-                    <p>AUG 11, 2017</p>
-                </div>
-    
-                <div class="flex-col justify-start p-3 mx-auto">
-                    <img src="../Img/live-music-2219036_640.jpg" alt="" class = "h-20 w-20">
-                    <h3 class = "font-bold">Onism</h3>
-                    <p>AUG 11, 2017</p>
-                </div>
-    
-                <div class="flex-col justify-start p-3 mx-auto">
-                    <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "h-20 w-20">
-                    <h3 class = "font-bold">Onism</h3>
-                    <p>AUG 11, 2017</p>
-                </div>
-    
-                <div class="flex-col justify-start p-3 mx-auto">
-                    <img src="../Img/plant-949111_640.jpg" alt="" class = "h-20 w-20">
-                    <h3 class = "font-bold">Onism</h3>
-                    <p>AUG 11, 2017</p>
-                </div>
-    
-                <div class="flex-col justify-start p-3 mx-auto">
-                    <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "h-20 w-20">
-                    <h3 class = "font-bold">Onism</h3>
-                    <p>AUG 11, 2017</p>
-                </div>
-    
-                <div class="flex-col justify-start p-3 mx-auto">
-                    <img src="../Img/guitar-67420_640.webp" alt="" class = "h-20 w-20">
-                    <h3 class = "font-bold">Onism</h3>
-                    <p>AUG 11, 2017</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Aside section for Queue -->
-    <aside class = "flex-col justify-between w-2/6 text-white mx-auto">
-
-        <div class="flex justify-around p-6 mx-auto">
+        <!-- Left part Section -->
+        <section class="w-5/6 md:w-5/6 max-w-full md:max-w-full space-y-3">
+            <!-- First Div has Pic -->
             <div>
-                <h1 class="font-bold ">Queue</h1>
+                <img src="./Img/piano-spielerin-3847833_640.jpg" alt=" initial internation release logo">
             </div>
+
+            <!-- Second Div Has latest release -->
+            <div class="flex-col justify-center space-y-2">
+
+                <!-- heading -->
+                <h2 class="font-bold ml-5 mt-5">Latest Release</h2>
+
+                <!-- upper div of release section -->
+                <div class="flex justify-around">
+                    <!-- left part -->
+                    <div class="ml-5 flex space-x-5 space-y-3 md:shrink-0">
+                        <span class="flex flex-row space-x-2 space-y-1">
+                            <!-- img -->
+                            <span >
+                                <img src="./Img/plant-949111_640.jpg" alt=" latest-realse-image" class=" w-15 h-15 md:w-20 md:h-20">
+                            </span>
+                            <!--heading and date  -->
+                            <span>
+                                <h3 class="font-bold ">Onism</h3>
+                                <p>Aug 11, 2017 </p>
+                            </span>
+                        </span>
+                        <!-- has dots and time -->
+                        <span class="items-center">
+                            <i class="fa-solid fa-ellipsis ml-2"></i>
+                            <p>4:44</p>
+                        </span>
+                    </div>
+
+                    <!-- right part -->
+                    <div class="ml-5 flex space-x-5 space-y-3">
+                        <span class="flex flex-row space-x-2 space-y-1">
+                            <!-- img -->
+                            <span>
+                                <img src="./Img/plant-949111_640.jpg" alt=" latest-realse-image" class="w-15 h-15 md:w-20 md:h-20">
+                            </span>
+                            <!--heading and date  -->
+                            <span>
+                                <h3 class="font-bold ">Onism</h3>
+                                <p>Aug 11, 2017 </p>
+                            </span>
+                        </span>
+                        <!-- has dots and time -->
+                        <span class="items-center">
+                            <i class="fa-solid fa-ellipsis ml-2"></i>
+                            <p>4:44</p>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Lower div of release section -->
+                <div class="flex justify-around">
+                    <!-- left part -->
+                    <div class="ml-5 flex space-x-5 space-y-3 md:shrink-0">
+                        <span class="flex flex-row space-x-2 space-y-1">
+                            <!-- img -->
+                            <span >
+                                <img src="./Img/plant-949111_640.jpg" alt=" latest-realse-image" class=" w-15 h-15 md:w-20 md:h-20">
+                            </span>
+                            <!--heading and date  -->
+                            <span>
+                                <h3 class="font-bold ">Onism</h3>
+                                <p>Aug 11, 2017 </p>
+                            </span>
+                        </span>
+                        <!-- has dots and time -->
+                        <span class="items-center">
+                            <i class="fa-solid fa-ellipsis ml-2"></i>
+                            <p>4:44</p>
+                        </span>
+                    </div>
+
+                    <!-- right part -->
+                    <div class="ml-5 flex space-x-5 space-y-3">
+                        <span class="flex flex-row space-x-2 space-y-1">
+                            <!-- img -->
+                            <span>
+                                <img src="./Img/plant-949111_640.jpg" alt=" latest-realse-image" class="w-15 h-15 md:w-20 md:h-20">
+                            </span>
+                            <!--heading and date  -->
+                            <span>
+                                <h3 class="font-bold ">Onism</h3>
+                                <p>Aug 11, 2017 </p>
+                            </span>
+                        </span>
+                        <!-- has dots and time -->
+                        <span class="items-center">
+                            <i class="fa-solid fa-ellipsis ml-2"></i>
+                            <p>4:44</p>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Third div has Popular Artist-->
             <div>
-                <a href="#" class="text-green-600 hover:text-white">Queue <i class="fa-sharp fa-light fa-greater-than origin-center rotate-90"></i> </a>
-            </div>
-            
-            
-        </div>
+                <!-- heading -->
+                <h2 class="font-bold ml-5">Popular Artists</h2>
 
-        <div class="flex justify-around p-2 mx-auto">
-            <div class="flex justify-around p-1">
-                <h1 class="font-bold text-center">01</h1>
-                <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-12 w-12 p-0 ml-1">
-                <div class = "flex-col ml-2 ">
-                    <h3 class="font-bold">Mirage</h3>
-                    <p>Echo</p>
+                <!-- artist img and name -->
+                <div class="flex justify-around space-x-2 space-y-3 ml-3 p-3">
+                    <span class="items-center ">
+                        <!-- img -->
+                        <span >
+                            <img src="./Img/photo-1573120525707-4549889744f2.avif" alt="artist-1" class="rounded-full w-12 h-12 ml-5 mt-2 md:w-20 md:h-20">
+                        </span>
+                        <!-- name -->
+                        <span>
+                            <h3 class="font-bold mt-2 ml-5">Ed Sheeran</h3>
+                        </span>
+                    </span>
+    
+                    <!-- second artist -->
+                    <span class="items-center ">
+                        <!-- img -->
+                        <span >
+                            <img src="./Img/photo-1447789624106-34acdd381c18.avif" alt="artist-1" class="rounded-full w-12 h-12 ml-5 mt-2 md:w-20 md:h-20">
+                        </span>
+                        <!-- name -->
+                        <span>
+                            <h3 class="font-bold mt-2 ml-3">ColdPlay</h3>
+                        </span>
+                    </span>
+
+                     <!-- Third artist -->
+                    <span class="items-center ">
+                        <!-- img -->
+                        <span >
+                            <img src="./Img/photo-1521417531039-75e91486cc40.avif" alt="artist-1" class="rounded-full w-12 h-12 ml-5 mt-2 md:w-20 md:h-20">
+                        </span>
+                        <!-- name -->
+                        <span>
+                            <h3 class="font-bold mx-auto ml-3">Zayn</h3>
+                        </span>
+                    </span>
+                    <!-- fourth artist -->
+                    <span class="items-center ">
+                        <!-- img -->
+                        <span >
+                            <img src="./Img/photo-1543510616-a4025b9c1434.avif" alt="artist-1" class="rounded-full w-12 h-12 ml-5 mt-2 md:w-20 md:h-20">
+                        </span>
+                        <!-- name -->
+                        <span>
+                            <h3 class="font-bold mx-auto ml-3">Charlie Puth</h3>
+                        </span>
+                    </span>
+                    <!-- fifth artist -->
+                    <span class="items-center ">
+                        <!-- img -->
+                        <span >
+                            <img src="./Img/photo-1575285113814-f770cb8c796e.avif" alt="artist-1" class="rounded-full w-12 h-12 ml-5 mt-2 md:w-20 md:h-20">
+                        </span>
+                        <!-- name -->
+                        <span>
+                            <h3 class="font-bold mx-auto ml-3">Imagine Dragon</h3>
+                        </span>
+                    </span>
+                    <!-- Sixth artist -->
+                    <span class="items-center ">
+                        <!-- img -->
+                        <span >
+                            <img src="./Img/photo-1598387993441-a364f854c3e1.avif" alt="artist-1" class="rounded-full w-12 h-12 ml-5 mt-2 md:w-20 md:h-20">
+                        </span>
+                        <!-- name -->
+                        <span>
+                            <h3 class="font-bold mx-auto ml-3">Bruno Mars</h3>
+                        </span>
+                    </span>
                 </div>
             </div>
-            <div class="items-center pr-12">
-                <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
-            </div>
-            
-        </div>
 
-        <!-- Queue-2 -->
-        <div class="flex justify-around p-2 mx-auto">
-            <div class="flex justify-start p-1">
-                <h1 class="font-bold text-center">02</h1>
-                <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-12 w-12 p-0 ml-1">
-                <div class = "flex-col ml-2 ">
-                    <h3 class="font-bold">Mirage</h3>
-                    <p>Echo</p>
+            <!-- Fourth div has multiple genre of music -->
+            <div class="flex-col space-y-4 ml-3">
+                <!-- upper Div -->
+                <div class="flex justify-around space-x-0">
+                    <!-- item 1 -->
+                    <span>
+                        <img src="../Img/Genre/Stations.png" alt="stations-image" class = "rounded-full h-12 w-12 md:w-20 md:h-20">
+                    </span>
+
+                    <!-- item 2 -->
+                    <span>
+                        <img src="../Img/Genre/Love.png" alt="stations-image" class = "rounded-full h-12 w-12 md:w-20 md:h-20">
+                    </span>
+
+                    <!-- item 3 -->
+                    <span>
+                        <img src="../Img/Genre/radio.png" alt="stations-image" class = "rounded-full h-12 w-12 md:w-20 md:h-20">
+                    </span>
+
+                    <!-- item 4 -->
+                    <span>
+                        <img src="../Img/Genre/chill.png" alt="stations-image" class = "rounded-full h-12 w-12 md:w-20 md:h-20">
+                    </span>
+
+                    <!-- item 5 -->
+                    <span>
+                        <img src="../Img/Genre/workout.png" alt="stations-image" class = "rounded-full h-12 w-12 md:h-20 md:w-20">
+                    </span>
+
+                    <!-- item 6 -->
+                    <span>
+                        <img src="../Img/Genre/rock.png" alt="stations-image" class = "rounded-full h-12 w-12 md:w-20 md:h-20">
+                    </span>
+
+                    <!-- item 7 -->
+                    <span>
+                        <img src="../Img/Genre/pop.png" alt="stations-image" class = "rounded-full h-12 w-12 md:w-20 md:h-20">
+                    </span>
+                </div>
+                <!-- lower div -->
+                <div class="flex justify-around space-x-2">
+                    <!-- left image -->
+                    <span>
+                        <img src="../Img/Genre/party.jpeg" alt="party image" class="w-21 h-21">
+                    </span>
+                    <!-- middle image -->
+                    <span>
+                        <img src="../Img/Genre/electronic_music.jpeg" alt="electronic music image">
+                    </span>
+                    <!-- right image -->
+                    <span>
+                        <img src="../Img/Genre/road_trip.jpeg" alt="road trip image">
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- fifth Div has latest English -->
+            <div class="ml-5 flex justify-around space-x-1">
+                <!-- item 1 -->
+                <span>
+                    <!-- img -->
+                    <span>
+                        <img src="../Img/guitar-67420_640.webp" alt="" class = "w-20 h-20 md:w-30 md:h-30">
+                    </span>
+                    <!-- para -->
+                    <span>
+                        <h3>Onism</h3>
+                        <p>Aug 11, 2017</p>
+                    </span>
+                </span>
+
+                <!-- item 2 -->
+                <span>
+                    <!-- img -->
+                    <span>
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                    </span>
+                    <!-- para -->
+                    <span>
+                        <h3>Onism</h3>
+                        <p>Aug 11, 2017</p>
+                    </span>
+                </span>
+
+                <!-- item 3 -->
+                <span>
+                    <!-- img -->
+                    <span>
+                        <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                    </span>
+                    <!-- para -->
+                    <span>
+                        <h3>Onism</h3>
+                        <p>Aug 11, 2017</p>
+                    </span>
+                </span>
+
+                <!-- item 4 -->
+                <span>
+                    <!-- img -->
+                    <span>
+                        <img src="../Img/plant-949111_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                    </span>
+                    <!-- para -->
+                    <span>
+                        <h3>Onism</h3>
+                        <p>Aug 11, 2017</p>
+                    </span>
+                </span>
+
+                <!-- item 5 -->
+                <span>
+                    <!-- img -->
+                    <span>
+                        <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                    </span>
+                    <!-- para -->
+                    <span>
+                        <h3>Onism</h3>
+                        <p>Aug 11, 2017</p>
+                    </span>
+                </span>
+
+                <!-- item 6 -->
+                <span>
+                    <!-- img -->
+                    <span>
+                        <img src="../Img/guitar-67420_640.webp" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                    </span>
+                    <!-- para -->
+                    <span>
+                        <h3>Onism</h3>
+                        <p>Aug 11, 2017</p>
+                    </span>
+                </span>
+
+            </div>
+
+            <!-- Sixth Div has Latest Hindi -->
+            <div class="ml-5 flex justify-around space-x-1">
+                <!-- item 1 -->
+                <span>
+                    <!-- img -->
+                    <span>
+                        <img src="../Img/guitar-67420_640.webp" alt="" class = "w-20 h-20 md:w-30 md:h-30">
+                    </span>
+                    <!-- para -->
+                    <span>
+                        <h3>Onism</h3>
+                        <p>Aug 11, 2017</p>
+                    </span>
+                </span>
+
+                <!-- item 2 -->
+                <span>
+                    <!-- img -->
+                    <span>
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                    </span>
+                    <!-- para -->
+                    <span>
+                        <h3>Onism</h3>
+                        <p>Aug 11, 2017</p>
+                    </span>
+                </span>
+
+                <!-- item 3 -->
+                <span>
+                    <!-- img -->
+                    <span>
+                        <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                    </span>
+                    <!-- para -->
+                    <span>
+                        <h3>Onism</h3>
+                        <p>Aug 11, 2017</p>
+                    </span>
+                </span>
+
+                <!-- item 4 -->
+                <span>
+                    <!-- img -->
+                    <span>
+                        <img src="../Img/plant-949111_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                    </span>
+                    <!-- para -->
+                    <span>
+                        <h3>Onism</h3>
+                        <p>Aug 11, 2017</p>
+                    </span>
+                </span>
+
+                <!-- item 5 -->
+                <span>
+                    <!-- img -->
+                    <span>
+                        <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                    </span>
+                    <!-- para -->
+                    <span>
+                        <h3>Onism</h3>
+                        <p>Aug 11, 2017</p>
+                    </span>
+                </span>
+
+                <!-- item 6 -->
+                <span>
+                    <!-- img -->
+                    <span>
+                        <img src="../Img/guitar-67420_640.webp" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                    </span>
+                    <!-- para -->
+                    <span>
+                        <h3>Onism</h3>
+                        <p>Aug 11, 2017</p>
+                    </span>
+                </span>
+
+            </div>
+
+
+        </section>
+
+        <!-- right part Aside -->
+        <aside class="w-5/6 md:w-3/6 max-w-full md:max-w-full space-y-3 mt-5">
+            <!-- Outer div -->
+            <div class="space-y-3">
+                <!-- item 1 -->
+                <div class="flex justify-evenly">
+                    <!-- Queue Part -->
+                    <span class="space-x-3">
+                        <h2 class="font-bold">Queue</h2>
+                    </span>
+                    <!-- Like part -->
+                    <span>
+                        <a href="#" class="text-green-600 hover:text-white">Queue <i class="fa-sharp fa-light fa-greater-than origin-center rotate-90"></i> </a>
+                    </span>
+                </div>
+
+                <div class="flex justify-evenly">
+                    <!-- Queue Part -->
+                    <span class="flex space-x-3">
+                        <h2 class="font-bold pt-3">01</h2>
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-10 w-10 p-0 ml-1 md:w-20 md:h-20 ">
+                        <span>
+                            <h3 class="font-bold">Mirage</h3>
+                            <p>Dino James</p>
+                        </span>
+                    </span>
+                    <!-- Like part -->
+                    <span>
+                        <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+                    </span>
+                </div>
+
+                <div class="flex justify-evenly">
+                    <!-- Queue Part -->
+                    <span class="flex space-x-3">
+                        <h2 class="font-bold pt-3">02</h2>
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-10 w-10 p-0 ml-1 md:w-20 md:h-20 ">
+                        <span>
+                            <h3 class="font-bold">Mirage</h3>
+                            <p>Dino James</p>
+                        </span>
+                    </span>
+                    <!-- Like part -->
+                    <span>
+                        <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+                    </span>
+                </div>
+
+                <div class="flex justify-evenly">
+                    <!-- Queue Part -->
+                    <span class="flex space-x-3">
+                        <h2 class="font-bold pt-3">03</h2>
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-10 w-10 p-0 ml-1 md:w-20 md:h-20 ">
+                        <span>
+                            <h3 class="font-bold">Mirage</h3>
+                            <p>Dino James</p>
+                        </span>
+                    </span>
+                    <!-- Like part -->
+                    <span>
+                        <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+                    </span>
+                </div>
+
+                <div class="flex justify-evenly">
+                    <!-- Queue Part -->
+                    <span class="flex space-x-3">
+                        <h2 class="font-bold pt-3">04</h2>
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-10 w-10 p-0 ml-1 md:w-20 md:h-20 ">
+                        <span>
+                            <h3 class="font-bold">Mirage</h3>
+                            <p>Dino James</p>
+                        </span>
+                    </span>
+                    <!-- Like part -->
+                    <span>
+                        <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+                    </span>
+                </div>
+
+                <div class="flex justify-evenly">
+                    <!-- Queue Part -->
+                    <span class="flex space-x-3">
+                        <h2 class="font-bold pt-3">05</h2>
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-10 w-10 p-0 ml-1 md:w-20 md:h-20 ">
+                        <span>
+                            <h3 class="font-bold">Mirage</h3>
+                            <p>Dino James</p>
+                        </span>
+                    </span>
+                    <!-- Like part -->
+                    <span>
+                        <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+                    </span>
+                </div>
+
+                <div class="flex justify-evenly">
+                    <!-- Queue Part -->
+                    <span class="flex space-x-3">
+                        <h2 class="font-bold pt-3">06</h2>
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-10 w-10 p-0 ml-1 md:w-20 md:h-20 ">
+                        <span>
+                            <h3 class="font-bold">Mirage</h3>
+                            <p>Dino James</p>
+                        </span>
+                    </span>
+                    <!-- Like part -->
+                    <span>
+                        <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+                    </span>
+                </div>
+
+                <div class="flex justify-evenly">
+                    <!-- Queue Part -->
+                    <span class="flex space-x-3">
+                        <h2 class="font-bold pt-3">07</h2>
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-10 w-10 p-0 ml-1 md:w-20 md:h-20 ">
+                        <span>
+                            <h3 class="font-bold">Mirage</h3>
+                            <p>Dino James</p>
+                        </span>
+                    </span>
+                    <!-- Like part -->
+                    <span>
+                        <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+                    </span>
+                </div>
+
+                <div class="flex justify-evenly">
+                    <!-- Queue Part -->
+                    <span class="flex space-x-3">
+                        <h2 class="font-bold pt-3">08</h2>
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-10 w-10 p-0 ml-1 md:w-20 md:h-20 ">
+                        <span>
+                            <h3 class="font-bold">Mirage</h3>
+                            <p>Dino James</p>
+                        </span>
+                    </span>
+                    <!-- Like part -->
+                    <span>
+                        <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+                    </span>
+                </div>
+
+                <div class="flex justify-evenly">
+                    <!-- Queue Part -->
+                    <span class="flex space-x-3">
+                        <h2 class="font-bold pt-3">09</h2>
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-10 w-10 p-0 ml-1 md:w-20 md:h-20 ">
+                        <span>
+                            <h3 class="font-bold">Mirage</h3>
+                            <p>Dino James</p>
+                        </span>
+                    </span>
+                    <!-- Like part -->
+                    <span>
+                        <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+                    </span>
+                </div>
+
+                <div class="flex justify-evenly">
+                    <!-- Queue Part -->
+                    <span class="flex space-x-3">
+                        <h2 class="font-bold pt-3">10</h2>
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-10 w-10 p-0 ml-1 md:w-20 md:h-20 ">
+                        <span>
+                            <h3 class="font-bold">Mirage</h3>
+                            <p>Dino James</p>
+                        </span>
+                    </span>
+                    <!-- Like part -->
+                    <span>
+                        <a href="#" class="text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
+                    </span>
                 </div>
             </div>
 
-            <div class="items-center pr-12">
-                <a href="#" class=" text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
-            </div>
-        </div>
+        </aside>
+        
+    </main>
 
-        <!-- Queue-3 -->
-        <div class="flex justify-around p-2 mx-auto">
-            <div class="flex justify-around p-1">
-                <h1 class="font-bold text-center">03</h1>
-                <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-12 w-12 p-0 ml-1">
-                <div class = "flex-col ml-2 ">
-                    <h3 class="font-bold">Mirage</h3>
-                    <p>Echo</p>
-                </div>
-            </div>
+    <footer>
+        <!-- forget about footer right now -->
+    </footer>
 
-            <div class="items-center pr-12">
-                <a href="#" class=" text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
-            </div>
-        </div>
-
-        <!-- Queue-4 -->
-        <div class="flex justify-around p-2 mx-auto">
-            <div class="flex justify-around p-1">
-                <h1 class="font-bold text-center">04</h1>
-                <img src="../Img/live-music-2219036_640.jpg" alt="" class="h-12 w-12 p-0 ml-1">
-                <div class = "flex-col ml-2 ">
-                    <h3 class="font-bold">Mirage</h3>
-                    <p>Echo</p>
-                </div>
-            </div>
-
-            <div class="items-center pr-12">
-                <a href="#" class=" text-green-600 hover:text-gray-600"><i class="fa-regular fa-heart"></i> </a>
-            </div>
-        </div>
-
-
-    </aside>
-
-</div>
-
-
-    </body>
+</body>
 </html>
