@@ -42,7 +42,7 @@
 
             <!-- Div has search bar , notification bell, avatar -->
             <div class="flex justify-around mt-6 md:space-x-8">
-                <div>
+                <div class="w-1/5 ">
                     <form class="flex flex-row-reverse rounded-full bg-slate-500 md:rounded-full">
                         <button type="submit"><i class="fa-solid fa-microphone mr-3"></i></button>
                         <input type="text" placeholder="Search" class="bg-slate-500 rounded-full p-2">
@@ -69,94 +69,96 @@
             </div>
 
             <!-- Second Div Has latest release -->
-            <div class="flex-col justify-center space-y-2">
+            <div class="flex-col justify-center space-y-2 overflow-auto">
 
                 <!-- heading -->
                 <h2 class="font-bold ml-5 mt-5">Latest Release</h2>
 
                 <!-- upper div of release section -->
-                <div class="flex justify-around">
-                    <!-- left part -->
-                    <div class="ml-5 flex space-x-5 space-y-3 md:shrink-0">
-                        <span class="flex flex-row space-x-2 space-y-1">
-                            <!-- img -->
-                            <span >
-                                <img src="./Img/plant-949111_640.jpg" alt=" latest-realse-image" class=" w-15 h-15 md:w-20 md:h-20">
+                <div class="overflow-x-auto flex md:shrink-0">
+                    <div class="flex justify-around overflow-x-auto">
+                        <!-- left part -->
+                        <div class="ml-5 flex space-x-5 space-y-3 md:shrink-0">
+                            <span class="flex flex-row space-x-2 space-y-1">
+                                <!-- img -->
+                                <span >
+                                    <img src="./Img/plant-949111_640.jpg" alt=" latest-realse-image" class="w-20 h-20">
+                                </span>
+                                <!--heading and date  -->
+                                <span>
+                                    <h3 class="font-bold ">Onism</h3>
+                                    <p>Aug 11, 2017 </p>
+                                </span>
                             </span>
-                            <!--heading and date  -->
-                            <span>
-                                <h3 class="font-bold ">Onism</h3>
-                                <p>Aug 11, 2017 </p>
+                            <!-- has dots and time -->
+                            <span class="items-center">
+                                <i class="fa-solid fa-ellipsis ml-2"></i>
+                                <p>4:44</p>
                             </span>
-                        </span>
-                        <!-- has dots and time -->
-                        <span class="items-center">
-                            <i class="fa-solid fa-ellipsis ml-2"></i>
-                            <p>4:44</p>
-                        </span>
+                        </div>
+    
+                        <!-- right part -->
+                        <div class="ml-5 flex space-x-5 space-y-3">
+                            <span class="flex flex-row space-x-2 space-y-1">
+                                <!-- img -->
+                                <span>
+                                    <img src="./Img/plant-949111_640.jpg" alt=" latest-realse-image" class="w-20 h-20">
+                                </span>
+                                <!--heading and date  -->
+                                <span>
+                                    <h3 class="font-bold ">Onism</h3>
+                                    <p>Aug 11, 2017 </p>
+                                </span>
+                            </span>
+                            <!-- has dots and time -->
+                            <span class="items-center">
+                                <i class="fa-solid fa-ellipsis ml-2"></i>
+                                <p>4:44</p>
+                            </span>
+                        </div>
                     </div>
-
-                    <!-- right part -->
-                    <div class="ml-5 flex space-x-5 space-y-3">
-                        <span class="flex flex-row space-x-2 space-y-1">
-                            <!-- img -->
-                            <span>
-                                <img src="./Img/plant-949111_640.jpg" alt=" latest-realse-image" class="w-15 h-15 md:w-20 md:h-20">
+    
+                    <!-- Lower div of release section -->
+                    <div class="flex justify-around">
+                        <!-- left part -->
+                        <div class="ml-5 flex space-x-5 space-y-3 md:shrink-0">
+                            <span class="flex flex-row space-x-2 space-y-1">
+                                <!-- img -->
+                                <span >
+                                    <img src="./Img/plant-949111_640.jpg" alt=" latest-realse-image" class="w-20 h-20">
+                                </span>
+                                <!--heading and date  -->
+                                <span>
+                                    <h3 class="font-bold ">Onism</h3>
+                                    <p>Aug 11, 2017 </p>
+                                </span>
                             </span>
-                            <!--heading and date  -->
-                            <span>
-                                <h3 class="font-bold ">Onism</h3>
-                                <p>Aug 11, 2017 </p>
+                            <!-- has dots and time -->
+                            <span class="items-center">
+                                <i class="fa-solid fa-ellipsis ml-2"></i>
+                                <p>4:44</p>
                             </span>
-                        </span>
-                        <!-- has dots and time -->
-                        <span class="items-center">
-                            <i class="fa-solid fa-ellipsis ml-2"></i>
-                            <p>4:44</p>
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Lower div of release section -->
-                <div class="flex justify-around">
-                    <!-- left part -->
-                    <div class="ml-5 flex space-x-5 space-y-3 md:shrink-0">
-                        <span class="flex flex-row space-x-2 space-y-1">
-                            <!-- img -->
-                            <span >
-                                <img src="./Img/plant-949111_640.jpg" alt=" latest-realse-image" class=" w-15 h-15 md:w-20 md:h-20">
+                        </div>
+    
+                        <!-- right part -->
+                        <div class="ml-5 flex space-x-5 space-y-3">
+                            <span class="flex flex-row space-x-2 space-y-1">
+                                <!-- img -->
+                                <span>
+                                    <img src="./Img/plant-949111_640.jpg" alt="latest-realse-image" class="w-20 h-20">
+                                </span>
+                                <!--heading and date  -->
+                                <span>
+                                    <h3 class="font-bold ">Onism</h3>
+                                    <p>Aug 11, 2017 </p>
+                                </span>
                             </span>
-                            <!--heading and date  -->
-                            <span>
-                                <h3 class="font-bold ">Onism</h3>
-                                <p>Aug 11, 2017 </p>
+                            <!-- has dots and time -->
+                            <span class="items-center">
+                                <i class="fa-solid fa-ellipsis ml-2"></i>
+                                <p>4:44</p>
                             </span>
-                        </span>
-                        <!-- has dots and time -->
-                        <span class="items-center">
-                            <i class="fa-solid fa-ellipsis ml-2"></i>
-                            <p>4:44</p>
-                        </span>
-                    </div>
-
-                    <!-- right part -->
-                    <div class="ml-5 flex space-x-5 space-y-3">
-                        <span class="flex flex-row space-x-2 space-y-1">
-                            <!-- img -->
-                            <span>
-                                <img src="./Img/plant-949111_640.jpg" alt=" latest-realse-image" class="w-15 h-15 md:w-20 md:h-20">
-                            </span>
-                            <!--heading and date  -->
-                            <span>
-                                <h3 class="font-bold ">Onism</h3>
-                                <p>Aug 11, 2017 </p>
-                            </span>
-                        </span>
-                        <!-- has dots and time -->
-                        <span class="items-center">
-                            <i class="fa-solid fa-ellipsis ml-2"></i>
-                            <p>4:44</p>
-                        </span>
+                        </div>
                     </div>
                 </div>
 
