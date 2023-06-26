@@ -11,14 +11,14 @@
     <title>Ninja Studio</title>
 </head>
 
-<body class="bg-violet-700 text-white flex-col dark:bg-slate-800 max-w-full">
+<body class="relative bg-violet-700 text-white flex-col dark:bg-slate-800 max-w-full">
 
 
 <!-- Responsive Code for mobile design and above (Whole code again) -->
     <header>
-        <nav class="relative container  p-6 mx-auto flex-col max-w-xl md:flex md:flex-row md:justify-between md:mx-auto md:max-w-full">
+        <nav class="relative container  p-6 mx-auto flex-col max-w-md md:flex md:flex-row md:justify-between md:mx-auto md:max-w-full">
             <!-- Div has Logo and Favourites heading -->
-            <div class="flex justify-around space-y-6 md:space-y-4 md:space-x-8 md:shrink-0">
+            <div class="flex justify-between space-y-6 md:space-y-4 md:space-x-8 md:shrink-0">
 
                 <!-- div has logo-img and title -->
                 <div class="flex justify-between max-w-sm">
@@ -41,14 +41,14 @@
                 </div>
 
                 <div class="flex bg-white rounded-full items-center">
-                    <img src="./Img/dark_mode_img/reshot-icon-light-max-SKL25EYVD9.svg" alt="" class="sun w-20 h-20 md:w-12 md:h-12">
-                    <img src="./Img/dark_mode_img/110827_moon_icon.svg" alt="" class="moon w-20 h-20 md:w-12 md:h-12">    
+                    <img src="./Img/dark_mode_img/reshot-icon-light-max-SKL25EYVD9.svg" alt="" class="sun w-12 h-11 md:w-20 md:h-20">
+                    <img src="./Img/dark_mode_img/110827_moon_icon.svg" alt="" class="moon w-12 h-11 md:w-20 md:h-20">    
                 </div>
 
             </div>
 
             <!-- Div has search bar , notification bell, avatar -->
-            <div class="flex justify-evenly mt-6 md:space-x-8">
+            <div class="flex justify-between mt-6 md:space-x-8">
                 <div>
                     <form class="flex flex-row-reverse rounded-full bg-slate-500 md:rounded-full">
                         <button type="submit"><i class="fa-solid fa-microphone mr-3"></i></button>
@@ -63,7 +63,7 @@
         </nav>
     </header>
 
-    <main class="max-w-full flex-col mx-auto space-x-10 md:flex  md:flex-row md:space-x-8">
+    <main class="max-w-full flex-col mx-auto space-x-10 md:flex  md:flex-row md:space-x-8 md:max-w-full">
 
         <!-- Left part Section -->
         <section class="max-w-full md:w-5/6 space-y-3">
@@ -254,224 +254,166 @@
             </div>
 
             <!-- Fourth div has multiple genre of music -->
-            <div class="flex-col space-y-4 p-6">
-                <!-- upper Div -->
-                <div class="flex overflow-auto max-w-full justify-around space-x-2 mx-auto p-6">
-                    <!-- item 1 -->
-                    <span>
-                        <img src="../Img/Genre/Stations.png" alt="stations-image" class = "rounded-full max-w-sm max-h-20">
-                    </span>
-
-                    <!-- item 2 -->
-                    <span>
-                        <img src="../Img/Genre/Love.png" alt="stations-image" class = "rounded-full max-w-sm max-h-20">
-                    </span>
-
-                    <!-- item 3 -->
-                    <span>
-                        <img src="../Img/Genre/radio.png" alt="stations-image" class = "rounded-full max-w-sm max-h-20">
-                    </span>
-
-                    <!-- item 4 -->
-                    <span>
-                        <img src="../Img/Genre/chill.png" alt="stations-image" class = "rounded-full max-w-sm max-h-20">
-                    </span>
-
-                    <!-- item 5 -->
-                    <span>
-                        <img src="../Img/Genre/workout.png" alt="stations-image" class = "rounded-full max-w-sm max-h-20">
-                    </span>
-
-                    <!-- item 6 -->
-                    <span>
-                        <img src="../Img/Genre/rock.png" alt="stations-image" class = "rounded-full max-w-sm max-h-20">
-                    </span>
-
-                    <!-- item 7 -->
-                    <span>
-                        <img src="../Img/Genre/pop.png" alt="stations-image" class = "rounded-full max-w-sm max-h-20">
-                    </span>
-                </div>
-                <!-- lower div -->
-                <div class="flex justify-around space-x-2 overflow-auto">
-                    <!-- left image -->
-                    <span>
-                        <img src="../Img/Genre/party.jpeg" alt="party image" class="w-21 h-21">
-                    </span>
-                    <!-- middle image -->
-                    <span>
-                        <img src="../Img/Genre/electronic_music.jpeg" alt="electronic music image">
-                    </span>
-                    <!-- right image -->
-                    <span>
-                        <img src="../Img/Genre/road_trip.jpeg" alt="road trip image">
-                    </span>
-
-                </div>
-
-            </div>
-
-            <!-- fifth Div has latest English -->
-            <div class="ml-5 flex justify-around space-x-1">
+            <div class="flex mx-auto space-x-1 shrink-0 p-3 max-w-full">
                 <!-- item 1 -->
-                <span>
+                <div>
                     <!-- img -->
                     <span>
-                        <img src="../Img/guitar-67420_640.webp" alt="" class = "w-20 h-20 md:w-30 md:h-30">
+                        <img src="../Img/guitar-67420_640.webp" alt="" class = "w-30 h-30">
                     </span>
                     <!-- para -->
                     <span>
                         <h3>Onism</h3>
                         <p>Aug 11, 2017</p>
                     </span>
-                </span>
+                </div>
 
                 <!-- item 2 -->
-                <span>
+                <div>
                     <!-- img -->
                     <span>
-                        <img src="../Img/live-music-2219036_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class = "w-30 h-30">
                     </span>
                     <!-- para -->
                     <span>
                         <h3>Onism</h3>
                         <p>Aug 11, 2017</p>
                     </span>
-                </span>
+                </div>
 
                 <!-- item 3 -->
-                <span>
+                <div>
                     <!-- img -->
                     <span>
-                        <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                        <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "w-30 h-30">
                     </span>
                     <!-- para -->
                     <span>
                         <h3>Onism</h3>
                         <p>Aug 11, 2017</p>
                     </span>
-                </span>
+                </div>
 
                 <!-- item 4 -->
-                <span>
+                <div>
                     <!-- img -->
                     <span>
-                        <img src="../Img/plant-949111_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                        <img src="../Img/plant-949111_640.jpg" alt="" class = "w-30 h-30">
                     </span>
                     <!-- para -->
                     <span>
                         <h3>Onism</h3>
                         <p>Aug 11, 2017</p>
                     </span>
-                </span>
+                </div>
 
                 <!-- item 5 -->
-                <span>
+                <div>
                     <!-- img -->
                     <span>
-                        <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                        <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "w-30 h-30">
                     </span>
                     <!-- para -->
                     <span>
                         <h3>Onism</h3>
                         <p>Aug 11, 2017</p>
                     </span>
-                </span>
+                </div>
 
                 <!-- item 6 -->
-                <span>
+                <div>
                     <!-- img -->
                     <span>
-                        <img src="../Img/guitar-67420_640.webp" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                        <img src="../Img/guitar-67420_640.webp" alt="" class = "w-30 h-30">
                     </span>
                     <!-- para -->
                     <span>
                         <h3>Onism</h3>
                         <p>Aug 11, 2017</p>
                     </span>
-                </span>
+                </div>
 
             </div>
 
             <!-- Sixth Div has Latest Hindi -->
-            <div class="ml-5 flex justify-around space-x-1">
+            <div class="flex overflow-auto mx-auto space-x-1 shrink-0 p-3 max-w-full">
                 <!-- item 1 -->
-                <span>
+                <div>
                     <!-- img -->
                     <span>
-                        <img src="../Img/guitar-67420_640.webp" alt="" class = "w-20 h-20 md:w-30 md:h-30">
+                        <img src="../Img/guitar-67420_640.webp" alt="" class = "w-30 h-30">
                     </span>
                     <!-- para -->
                     <span>
                         <h3>Onism</h3>
                         <p>Aug 11, 2017</p>
                     </span>
-                </span>
+                </div>
 
                 <!-- item 2 -->
-                <span>
+                <div>
                     <!-- img -->
                     <span>
-                        <img src="../Img/live-music-2219036_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                        <img src="../Img/live-music-2219036_640.jpg" alt="" class = "w-30 h-30">
                     </span>
                     <!-- para -->
                     <span>
                         <h3>Onism</h3>
                         <p>Aug 11, 2017</p>
                     </span>
-                </span>
+                </div>
 
                 <!-- item 3 -->
-                <span>
+                <div>
                     <!-- img -->
                     <span>
-                        <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                        <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "w-30 h-30">
                     </span>
                     <!-- para -->
                     <span>
                         <h3>Onism</h3>
                         <p>Aug 11, 2017</p>
                     </span>
-                </span>
+                </div>
 
                 <!-- item 4 -->
-                <span>
+                <div>
                     <!-- img -->
                     <span>
-                        <img src="../Img/plant-949111_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                        <img src="../Img/plant-949111_640.jpg" alt="" class = "w-30 h-30">
                     </span>
                     <!-- para -->
                     <span>
                         <h3>Onism</h3>
                         <p>Aug 11, 2017</p>
                     </span>
-                </span>
+                </div>
 
                 <!-- item 5 -->
-                <span>
+                <div>
                     <!-- img -->
                     <span>
-                        <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                        <img src="../Img/piano-spielerin-3847833_640.jpg" alt="" class = "w-30 h-30">
                     </span>
                     <!-- para -->
                     <span>
                         <h3>Onism</h3>
                         <p>Aug 11, 2017</p>
                     </span>
-                </span>
+                </div>
 
                 <!-- item 6 -->
-                <span>
+                <div>
                     <!-- img -->
                     <span>
-                        <img src="../Img/guitar-67420_640.webp" alt="" class = "h-20 w-20 md:w-30 md:h-30">
+                        <img src="../Img/guitar-67420_640.webp" alt="" class = "w-30 h-30">
                     </span>
                     <!-- para -->
                     <span>
                         <h3>Onism</h3>
                         <p>Aug 11, 2017</p>
                     </span>
-                </span>
+                </div>
 
             </div>
 
@@ -658,10 +600,6 @@
         </aside>
         
     </main>
-
-    <footer>
-        <!-- forget about footer right now -->
-    </footer>
 
     <script src="./js/index.js"></script>
 
